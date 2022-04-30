@@ -110,5 +110,9 @@ let frutas = {
 carrinho.push(frutas)
 console.log(carrinho)  
  //////////////////////////////////////////
+ 
+
+ teste
+
  */
 
