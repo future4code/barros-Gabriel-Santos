@@ -153,8 +153,6 @@ function cinema(filme,ingresso){
 
 console.log(cinema.ingresso("Bom filme! Aproveite o seu "+ $[0])); 
 
-///////////////////
-
 */
 
 
