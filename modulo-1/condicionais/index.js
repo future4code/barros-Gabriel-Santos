@@ -135,7 +135,7 @@ console.log(cinema(filme,ingresso));
 
 *DESAFIOS 
 
-1:              */
+1:              
 
 const filme=prompt("Qual gênero de filme você vai assitir?")
 const ingresso=Number(prompt("Qual valor do ingresso?"))
@@ -151,5 +151,10 @@ function cinema(filme,ingresso){
     
    
 
-console.log(cinema.ingresso("Bom filme! Aproveite o seu "+ $[0]));
+console.log(cinema.ingresso("Bom filme! Aproveite o seu "+ $[0])); 
+
+///////////////////
+
+*/
+
 
