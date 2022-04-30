@@ -133,25 +133,7 @@ console.log(cinema(filme,ingresso));
 
 ---------------------------------------------
 
-*DESAFIOS 
 
-1:              
-
-const filme=prompt("Qual gênero de filme você vai assitir?")
-const ingresso=Number(prompt("Qual valor do ingresso?"))
-
-function cinema(filme,ingresso){
-    if (filme!=="fantasia" && ingresso<15){
-        return "escolha outro filme :("
-    }else{
-        lanche=prompt["Qual snack que você quer comprar?"]
-    }
-        
-}
-    
-   
-
-console.log(cinema.ingresso("Bom filme! Aproveite o seu "+ $[0])); 
 
 */
 
