@@ -1,5 +1,5 @@
 
-
+/*
    console.log("Bem vindo(a) ao jogo de Blackjack!");
    const iniciarJogo = confirm("Quer iniciar uma nova rodada?")
 
@@ -17,14 +17,14 @@
       if (cartasUsuario===castasComputador){
          console.log("Empate!");
       }else if(cartasUsuario>castasComputador){
-         console.log("O usuário ganhou!");
+         console.log("O usuário ganhou!🤩");
       }else{
-         console.log("O computador ganhou!");
+         console.log("O computador ganhou!😭");
       }
 
    }else{
       console.log("O jogo acabou!");
-   }
+   }          */
  
 
    
