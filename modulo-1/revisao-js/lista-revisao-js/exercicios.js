@@ -10,58 +10,70 @@ function retornaTamanhoArray(array) {
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-    let meuArray=[]
     return array.reverse()
 
 }
-console.log(retornaArrayInvertido(meuArray));
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-    let arrayNumeros = []
-    let ordemNumeros = arrayNumeros.sort((a,b)=> {
-        return a-b
+    return array.sort((a,b)=> a-b)
         
-    })
-    console.log(array);
-    
 }
-
-
+   
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-    
+    return array.filter((Number)=> Number % 2 === 0)
   
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    return array.filter((Number)=> Number % 2 === 0).map((Number)=>Number*Number)
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  return Math.max(...array)
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+    const primeiroNumero=Math.max(num1,num2)
+    const segundoNumero=Math.min(num1,num2)  
+    const numero={
+        maiorNumero:primeiroNumero,
+        maiorDivisivelPorMenor:primeiroNumero%segundoNumero===0,
+        diferenca:primeiroNumero-segundoNumero
+    }
+    return numero
 
+    
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+    let numero=[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30]
+    return numero.slice(0,n)
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+    if(ladoA===ladoB && ladoA===ladoC && ladoB===ladoC){
+        return "Equilátero"
+    }else if(ladoA!==ladoB && ladoA===ladoC || ladoB!==ladoC && ladoB===ladoA || ladoC!==ladoA && ladoC===ladoB){
+        return "Isósceles"
+    }else(ladoA!==ladoB && ladoA!==ladoC && ladoB!==ladoC)
+        return "Escaleno"
+        
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  let menorNum= Math.min(...array)
+  let maiorNum= Math.max(...array)
+  let segundoMenor=menorNum +1
+  let segundoMaior=maiorNum - 1
+  return [segundoMaior, segundoMenor]
 }
 
 // EXERCÍCIO 11
