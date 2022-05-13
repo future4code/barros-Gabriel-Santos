@@ -72,7 +72,7 @@ function retornaSegundoMaiorESegundoMenor(array) {
   let menorNum= Math.min(...array)
   let maiorNum= Math.max(...array)
   let segundoMenor=menorNum +1
-  let segundoMaior=maiorNum - 1
+  let segundoMaior=maiorNum + 1
   return [segundoMaior, segundoMenor]
 }
 
