@@ -78,12 +78,16 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+   return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}.`
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+   let pessoaAnonimizada = {
+       ...pessoa,
+       nome: "ANÔNIMO"
+   }
+   return pessoaAnonimizada
 }
 
 // EXERCÍCIO 13A
