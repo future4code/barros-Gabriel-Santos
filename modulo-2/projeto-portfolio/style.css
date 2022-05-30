@@ -1,11 +1,15 @@
 body {
-    background-color: cadetblue;
+    background-image: url(.//Imagens/fundo2.png);
+    background-size: cover;
+    background-position: top;
+    
+
 }
 
 nav {
     height: 100%;
-    width: 89px;
-    background-color: red;
+    width: 95px;
+    background-color: #05fdd8;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +17,7 @@ nav {
 }
 
 nav>a {
-    color: white;
+    color: black;
     display: block;
     text-decoration: none;
     padding: 12px 10px 12px 5px
@@ -21,13 +25,16 @@ nav>a {
 }
 
 nav>a:hover{
-    color: red;
-    background-color: white;
+    color:#05fdd8;
+    background-color: black;
 }
 
-div{
-    margin: 200px 300px 0px 200px;
+.texto-home{
+    margin-top: 150px;
+    margin-left: 150px;
     padding: 5px 5px 5px 10px;
+    color: white;
+   
 }
 
 div>h1,h4,h3{
@@ -35,12 +42,45 @@ div>h1,h4,h3{
       
 }
 div>h1{
-    font-size: 50px;
+    font-size: 100px;
 }
 div>h3{
-    font-size: 30px;
+    font-size: 60px;
 }
 div>h4{
-    font-size: 20px;
+    font-size: 50px;
 }
-
+nav>img{
+    height: 95px;
+}
+.texto-sobre{
+    color: white;
+    margin-top: 150px;
+    margin-left: 150px;
+    padding: 5px 5px 5px 10px;
+    color: white;
+   
+}
+.texto-sobre>p{
+    margin: 0px;
+    font-size: 27px;
+}
+.texto-sobre>h2{
+    
+    font-size: 40px;
+}
+.texto-contato{
+    color: white;
+    margin-top: 150px;
+    margin-left: 150px;
+    padding: 5px 5px 5px 10px;
+    color: white
+}
+.texto-contato>p{
+    margin: 0px;
+    font-size: 27px
+}
+.texto-contato>h2{
+    
+    font-size: 40px;
+}
