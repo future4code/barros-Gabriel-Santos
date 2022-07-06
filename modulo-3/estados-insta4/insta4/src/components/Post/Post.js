@@ -14,23 +14,36 @@ function Post(props){
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
   const [numeroComentarios, setNumeroComentarios] = useState(0)
+  const [coment, setComent] = useState("")
 
   const onClickCurtida = () => {
-    console.log('Curtiu!')
+    setCurtido(!curtido)
+    if(!curtido){
+      setnumeroCurtidas(numeroCurtidas+1)
+      console.log('Curtiu!')
+    }else{
+      setnumeroCurtidas(numeroCurtidas-1)
+    }
   }
   
   const onClickComentario = () => {
     setComentando(!comentando)
-    if(comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
-    }
     console.log(comentando)
   }
   
   const aoEnviarComentario = () => {
     setComentando(false)
-    setNumeroComentarios(numeroComentarios + 1)
+    if (coment!==""){
+      setNumeroComentarios(numeroComentarios+1)
+    }
+    setComent("")
   }
+  const handleInputComent=(e)=>{
+    setComent(e.target.value)
+    console.log(comentando);
+  }
+
+
 
   let iconeCurtida
 
@@ -43,8 +56,10 @@ function Post(props){
     let componenteComentario
 
     if(comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
+      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario} onChangeComentario={handleInputComent} value={coment} />
+      
     }
+   
 
   return(
     <div className = 'PostContainer'>
