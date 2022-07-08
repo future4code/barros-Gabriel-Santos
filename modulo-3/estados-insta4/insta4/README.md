@@ -1,1 +1,1 @@
-tranquil-jump.surge.sh
+faulty-cord.surge.sh
