@@ -1,1 +1,1 @@
-spiteful-rain.surge.sh
+https://spiteful-rain.surge.sh/
