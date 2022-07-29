@@ -1,0 +1,15 @@
+
+.App{
+
+  text-align: center;
+  
+
+}
+.App>header{
+  background: fixed orange;
+  height: 70px;
+  width: 100%;
+  padding: 3px;
+ 
+  
+}
