@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import axios from 'axios';
 
 
@@ -6,29 +6,35 @@ function App() {
 
   const [useProfile, setUseProfile]=useState([])
 
+  useEffect(() => {
+    getProfileToChoose();
+  }, []);
+
   const getProfileToChoose=()=>{
     axios.get("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/gabriel-santos-barros/person")
     .then((response)=>{
       console.log(response.data);
-      setUseProfile(response.result.data.profile)
+      setUseProfile(response.data.result.bio)
     })
-    .catch((er)=>{
-      console.log(er.response.data);
+    .catch((erro)=>{
+      console.log(erro.response.data);
     })
   }
   
-  getProfileToChoose()
+ 
 
   return (
-    <div className="App">
-      <h1>Olá </h1>
+    <>
+      <h1>Olá!</h1>
+      <h2>Não consegui imprimir as Apis!</h2>
+      
       {useProfile.map((perfil)=>{
         return (
-          <li key={perfil.id}>{perfil.profile}</li>
+          <div>key={perfil.id}{perfil.profile}</div>
           )
 
       })}
-    </div>
+    </>
   );
 }
 
