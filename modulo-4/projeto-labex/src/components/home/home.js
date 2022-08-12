@@ -4,11 +4,13 @@ import {useNavigate} from 'react-router-dom'
 
 function Home(){
 
-    const navigate= useNavigate;
+  const navigate= useNavigate;
 
   const goToAbout=()=>{
-    navigate("/signUp")
+   navigate("/signUp")
+
   }
+  
   return (
     <section>
       <h1>Home</h1>
