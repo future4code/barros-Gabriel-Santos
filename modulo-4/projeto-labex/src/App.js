@@ -1,15 +1,12 @@
 import React from "react";
-import { Router } from "react-router-dom";
-
-
+import Rotas from "./Routers/Rotas"
 
 
 function App() {
   return (
-   <>
-    <h1>Olá</h1>
-    <Router/>
-   </>
+   <div>
+      <Rotas/>
+   </div>
   );
 }
 
