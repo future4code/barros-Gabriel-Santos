@@ -1,32 +1,5 @@
 import styled from "styled-components"
 
-export const Trip=styled.div`
-    border:2px  darkviolet ;
-    border-style: dashed;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    padding: 20px;
-    width: max-content;
-    border-radius: 15px;
-    margin-top: 10px;
-    h1{
-        text-transform: uppercase;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    `
-    export const TPage=styled.div`
-    width: max-content;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    border: 3px solid darkorange;
-    justify-content: stretch;
-    align-items: center;
-    `
-
 export const MyForm=styled.form`
     display: flex;
     flex-direction: column;
@@ -35,6 +8,8 @@ export const MyForm=styled.form`
     padding: 20px;
     border: 2px solid blue;
     border-radius: 15px;
+    text-align: center;
+
     input{
         font-size: 16px;
         padding: 5px;

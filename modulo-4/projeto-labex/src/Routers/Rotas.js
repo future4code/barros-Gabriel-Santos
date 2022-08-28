@@ -7,6 +7,7 @@ import AdminHomePage from '../Pages/AdminHomePage'
 
 
 
+
 function Router() {
     return (
       <BrowserRouter>
@@ -14,6 +15,7 @@ function Router() {
               <Route index element={<Home/>}/>
               <Route path="application-form" element={<ApplicationForm/>}/>
               <Route path="admin-home-page" element={<AdminHomePage/>}/>
+              
           </Routes>
       </BrowserRouter>
     );
